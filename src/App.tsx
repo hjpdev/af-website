@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 
 import { Calendar } from './Calendar'
-import { Section } from './Section'
 
 import logo from '../logo.png'
 import me from '../me.jpeg'
@@ -14,38 +13,36 @@ export function App() {
     calendarRef.current?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <div className="app flex-col">
+    <div className="app">
       <img src={logo} className="logo" />
-      <Section>
-        <div className="about-me">
-          <img src={me} />
-          <div>
-            <span className="title">
-              I help e-commerce businesses and entrepreneurs with strategy,
-              content creation & digital organisation.
-            </span>
-            <span>
-              Stop wasting time not knowing what to post and how to keep your
-              feed active with a strategy in place.
-            </span>
-            <span>
-              Get in touch today to allow me to take care of your social media
-              content plan so you can spend more of your valuable time managing
-              and expanding your business.
-            </span>
-            <button onClick={handleClick}>Contact me now!</button>
-          </div>
+      <div className="section introduction">
+        <img src={me} />
+        <div>
+          <span className="title">
+            I help e-commerce businesses and entrepreneurs with strategy,
+            content creation & digital organisation.
+          </span>
+          <span>
+            Stop wasting time not knowing what to post and discover new ways to
+            keep your feed active with a strategy in place.
+          </span>
+          <span>
+            Get in touch today to allow me to take care of your social media
+            content plan so you can spend more of your valuable time managing
+            and expanding your business.
+          </span>
+          <button onClick={handleClick}>Contact me now!</button>
         </div>
-      </Section>
-      <Section dark>
+      </div>
+      <div className="section dark philosophy">
         <span className="title">My philosophy</span>
         <span>
           I help you empower your business by developing an effective content
           strategy, craft valuable content that nurtures meaningful connections,
           and expand your audience while building a community.
         </span>
-      </Section>
-      <Section>
+      </div>
+      <div className="section packages">
         <span className="title">Packages</span>
         <div className="service">
           <span className="header">
@@ -107,10 +104,10 @@ export function App() {
           specific business requirements, kindly reach out to me, and I will
           gladly explore ways in which I can assist you.
         </span>
-      </Section>
-      <Section dark>
+      </div>
+      <div className="section dark about-me">
         <span className="title">About Me</span>
-        <p className="quotation">
+        <p>
           "Throughout my professional journey in different corporate positions
           and industries, I have acquired a diverse set of skills. Alongside my
           experience as a team assistant, sales assistant, and software
@@ -121,10 +118,10 @@ export function App() {
           process and systems to support your growth. I am excited to support
           you in your mission of creating your unique story."
         </p>
-      </Section>
-      <Section>
+      </div>
+      <div className="section">
         <Calendar ref={calendarRef} />
-      </Section>
+      </div>
       All Rights Reserved
     </div>
   )
