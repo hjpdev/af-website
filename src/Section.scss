@@ -1,0 +1,21 @@
+@import './variables';
+
+.section {
+  padding: 2rem;
+  color: $grey;
+  background-color: $white;
+  text-align: start;
+  justify-content: center;
+  gap: 1rem;
+
+  
+  &.dark {
+    color: $white;
+    background-color: $grey;
+  }
+
+  .title {
+    font-family: "Abril Fatface";
+    font-size: x-large;
+  }
+}

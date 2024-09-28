@@ -1,0 +1,72 @@
+@import './variables';
+
+.spinner {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg, rgb(0 0 0/50%) 30%, #0000 0 70%, rgb(0 0 0/100%) 0)
+      50%/8% 100%,
+    linear-gradient(90deg, rgb(0 0 0/25%) 30%, #0000 0 70%, rgb(0 0 0/75%) 0)
+      50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.spinner::before,
+.spinner::after {
+  content: '';
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+.spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.highlight {
+  position: relative;
+  width: fit-content;
+  z-index: 0;
+}
+
+.highlight::before {
+  /* Highlight color */
+  // background-color: #46b96c;
+
+  content: '';
+  background: linear-gradient(
+      104deg,
+      rgb(228, 201, 160, 0) 0.9%,
+      rgb(228, 201, 160, 0.55) 12.4%,
+      rgb(228, 201, 160, 0.5) 55.8%,
+      rgb(228, 201, 160, 0.41) 93%,
+      rgb(228, 201, 160, 0.7) 96%,
+      rgb(131, 117, 982, 0) 98%
+    ),
+    linear-gradient(183deg, rgb(228, 201, 160, 0) 0%, rgb(228, 201, 160, 0.3) 7.9%, rgb(228, 201, 160, 0) 15%);
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 100%;
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  left: -8px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-radius: 7.5px;
+  text-shadow:
+    -12px 12px 9.8px rgb(228, 201, 160, 0.7),
+    21px -18.1px 7.3px rgba(255, 255, 255, 1),
+    -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+  z-index: -1;
+  padding: 1rem;
+}
