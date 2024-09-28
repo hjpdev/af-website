@@ -55,10 +55,6 @@
     linear-gradient(183deg, rgb(228, 201, 160, 0) 0%, rgb(228, 201, 160, 0.3) 7.9%, rgb(228, 201, 160, 0) 15%);
   position: absolute;
   width: calc(100% - 20px);
-  height: 100%;
-  height: -moz-available;          /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  height: fill-available;
   left: -8px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
