@@ -1,4 +1,4 @@
-service: af-website
+service: af-website-stack
 
 provider:
   name: aws

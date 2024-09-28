@@ -79,21 +79,21 @@ export function App() {
             from £600/month*
           </span>
           <span>
-            A strategy session to discuss your goals, ideal audience, current or
-            new content strategy, and what kind of content will make the biggest
-            impact for you.
+            A managed service where we will initially meet for a session to
+            outline the goals and develop a strategy. I will create and schedule
+            content for you, continually analyse the performance and we will
+            collaborate to find the best approach.
           </span>
           <ul>
             <strong>Includes</strong>
             <li>
               Content calendar with 12 feed post ideas - these will require some
               contributions from you (images, videos, photos, caption notes
-              etc.) in order to create high quality, effective & authentic
-              content.
+              etc.) to create high-quality, effective & authentic content.
             </li>
             <li>
               12 strategic pieces of content with captions, keywords, hashtags
-              etc. All edited according to your individual brand guidelines.
+              etc. edited according to your individual brand guidelines.
             </li>
             <li>
               Provided to you ready to post or schedule using a scheduling tool.
@@ -114,7 +114,7 @@ export function App() {
           "Throughout my professional journey in different corporate positions
           and industries, I have acquired a diverse set of skills. Alongside my
           experience as a team assistant, sales assistant, and software
-          engineer, I have pursued a Management-Marketing degree and completed
+          engineer, I have pursued a Management & Marketing degree and completed
           courses in Graphic Design as well as The Fundamentals of Digital
           Marketing. I believe in the beauty of simplicity, that organisation is
           very important in your business, and having a robust content creation
