@@ -8,7 +8,7 @@ plugins:
   - serverless-s3-sync
 
 custom:
-  bucketName: af-website
+  bucketName: af-website-2024
   s3Sync:
     - bucketName: ${self:custom.bucketName}
       localDir: dist/
