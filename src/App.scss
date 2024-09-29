@@ -44,24 +44,44 @@
   justify-content: center;
   text-align: start;
 
-  
   &.dark {
     color: $white;
     background-color: $grey;
   }
 
   .title {
-    font-family: "Abril Fatface";
+    font-family: 'Abril Fatface';
     font-size: x-large;
   }
 }
 
-.logo {
-  max-height: 10rem;
-  align-self: start;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  @media screen and (max-width: $breakpoint) {
-    max-height: 6rem;
+  .logo {
+    max-height: 8rem;
+    align-self: start;
+
+    @media screen and (max-width: $breakpoint) {
+      max-height: 6rem;
+    }
+  }
+
+  .social-media {
+    padding: 1rem;
+
+    a {
+      display: inline-flex;
+      padding: 1rem;
+
+      &:hover {
+        svg {
+          transform: scale(1.5);
+        }
+      }
+    }
   }
 }
 
@@ -103,7 +123,7 @@
   }
 }
 
-.philosophy {
+.mission {
   > span {
     padding: 1rem;
     padding-top: 0;
@@ -111,17 +131,15 @@
 }
 
 .packages {
-  > span {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  padding: 1rem;
 }
 
 .service {
   position: relative;
   padding: 1rem;
+  padding-top: 0;
 
-  .header {
+  .service-name {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,18 +163,15 @@
 }
 
 .about-me {
-  > * {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   > p {
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
     font-style: italic;
     font-weight: 300;
     font-size: x-large;
   }
 }
-
 
 .calender {
   display: flex;
